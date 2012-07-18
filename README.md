@@ -6,12 +6,13 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
  For any class using a WebService object for asynchronous calls...
  
  1) Define a notification observer in the init method of that class:
- [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(methodUsingParsedData:) name:@"className" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(methodUsingParsedData:) name:@"className" object:nil];
  
  2) This class must also define methodUsingParsedData to receive and use the data once the api request is completed.
- Initializing the WebService object in the following way: WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
+ Initializing the WebService object in the following way: 
+    WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
  
- In all cases, you must define myWebsite as "http://www.website.com/webroot" in WebService.m (this file)
+ In all cases, you must define myWebsite as http://www.website.com/webroot in WebService.m (this file)
  
  WebService Use Cases:
 ======================
