@@ -29,7 +29,7 @@
  
 #import "WebService.h"
 
-#define myWebsite [NSString stringWithFormat: @"http://www.heyjoynin.com%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"environment"]]
+#define myWebsite @"http://www.website.com/webroot"
 
 @implementation WebService
 @synthesize parsedData;
