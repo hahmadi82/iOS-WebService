@@ -13,7 +13,7 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
  
  In all cases, you must define myWebsite as "http://www.website.com/webroot" in WebService.m (this file)
  
- WebService use cases:
+ WebService Use Cases:
 ======================
  NSString *postPath = @"path/of/api/call"
  NSString *postVal = @"key1=value1&key2=value2&key3=value3";
