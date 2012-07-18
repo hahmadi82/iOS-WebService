@@ -15,7 +15,7 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
  
  WebService Use Cases:
 ======================
- NSString *postPath = @"path/of/api/call"
+ `NSString *postPath = @"path/of/api/call"
  NSString *postVal = @"key1=value1&key2=value2&key3=value3";
  
  WebService *wsSync = [[WebService alloc] init];
@@ -24,4 +24,4 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
  
  WebService *wsAsync = [[WebService alloc] initWithObjectName:@"className"];
  NSDictionary *fetchedData = [wsAsync fetchJSON:postPath];
- NSDictionary *postedData = [wsAsync postJSON:postPath valuePair:postVal];
+ NSDictionary *postedData = [wsAsync postJSON:postPath valuePair:postVal];`
