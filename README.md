@@ -14,7 +14,7 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
  
     WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
  
- In all cases, you must define myWebsite as http://www.website.com/webroot in WebService.m (this file)
+ In all cases, you must define myWebsite as http://www.website.com/webroot in WebService.m
  
  WebService Use Cases:
 ======================
