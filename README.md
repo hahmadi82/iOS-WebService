@@ -10,7 +10,7 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(methodUsingParsedData:) name:@"className" object:nil];
  
  2) This class must also define methodUsingParsedData to receive and use the data once the api request is completed.
- Initializing the WebService object in the following way:
+ Initialize the WebService object in the following way:
  
     WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
  
