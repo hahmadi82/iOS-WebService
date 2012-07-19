@@ -1,5 +1,5 @@
 //
-//  WebService.m
+//  WebService.h
 //  ARC enabled
 //  Created by Hooman Ahmadi on 12/27/11.
 /****************************************************************************************************************************
@@ -9,9 +9,9 @@
  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(methodUsingParsedData:) name:@"className" object:nil];
  
  2) This class must also define methodUsingParsedData to receive and use the data once the api request is completed.
- Initializing the WebService object in the following way: WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
+ Initialize the WebService object in the following way: WebService *ws = [[WebService alloc] initWithObjectName:@"className"];
  
- In all cases, you must define myWebsite as "http://www.website.com/webroot" in WebService.m
+ In all cases, you must define myWebsite as http://www.website.com/webroot (the url of your api) in WebService.m (this file)
  
  WebService use cases:
  
@@ -25,7 +25,7 @@
  WebService *wsAsync = [[WebService alloc] initWithObjectName:@"className"];
  NSDictionary *fetchedData = [wsAsync fetchJSON:postPath];
  NSDictionary *postedData = [wsAsync postJSON:postPath valuePair:postVal];
- ****************************************************************************************************************************/
+ ****************************************************************************************************************************/ 
 
 #import <Foundation/Foundation.h>
 
