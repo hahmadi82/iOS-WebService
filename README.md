@@ -26,5 +26,5 @@ simple Objective-C class for handing synchronous and asynchronous web service ca
     NSDictionary *postedData = [wsSync postJSON:postPath valuePair:postVal];
  
     WebService *wsAsync = [[WebService alloc] initWithObjectName:@"className"];
-    NSDictionary *fetchedData = [wsAsync fetchJSON:postPath];
-    NSDictionary *postedData = [wsAsync postJSON:postPath valuePair:postVal];
+     [wsAsync fetchJSONasync:postPath];
+     [wsAsync postJSONasync:postPath valuePair:postVal];
